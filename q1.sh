@@ -1,0 +1,1 @@
+sed '/^[[:space:]]*$/d' quotes.txt | awk '{if(count[$0]==0){print $0;count[$0]++;}}'
